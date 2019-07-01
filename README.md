@@ -1,10 +1,11 @@
 # superchain
 
-a docker image with all the goodies needed to package jsii projects to multiple languages
+a docker image with all the goodies needed to package [jsii](https://github.com/awslabs/jsii) projects to multiple languages
 
-Includes:
+Currently includes:
 
  - NodeJS 10.16
  - OpenJDK 8
  - Python 3.6
-
+ - .NET is not supported
+ 
