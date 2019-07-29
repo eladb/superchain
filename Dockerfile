@@ -34,5 +34,5 @@ RUN wget -O dotnet.tar.gz https://dotnetcli.blob.core.windows.net/dotnet/Runtime
 # ruby 2.5.5
 RUN apk add ruby=2.5.5-r0
 
-# bash
-RUN apk add bash
+# other stuff
+RUN apk add bash git curl
