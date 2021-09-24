@@ -1,11 +1,11 @@
 FROM alpine:3.9
 
 # ------------------------------------------------------------------------------------------------------------------
-# nodejs 10.16.0
-RUN apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.10/main nodejs=10.16.0-r0 npm=10.16.0-r0
+# nodejs 12.22.6
+RUN apk add --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/v3.12/main nodejs=12.22.6-r0 npm=12.22.6-r0
 
 # ------------------------------------------------------------------------------------------------------------------
-# python 3.6.8 (https://github.com/frol/docker-alpine-python3/blob/master/Dockerfile)
+# python 3.6.9 (https://github.com/frol/docker-alpine-python3/blob/master/Dockerfile)
 RUN echo "**** install Python ****" && \
     apk add --no-cache python3 && \
     if [ ! -e /usr/bin/python ]; then ln -sf python3 /usr/bin/python ; fi && \
@@ -31,8 +31,8 @@ RUN wget -O dotnet.tar.gz https://dotnetcli.blob.core.windows.net/dotnet/Runtime
     && ln -s /usr/share/dotnet/dotnet /usr/bin/dotnet \
     && rm dotnet.tar.gz
 
-# ruby 2.5.5
-RUN apk add ruby=2.5.5-r0
+# ruby 2.5.8
+RUN apk add ruby=2.5.8-r0
 
 # other stuff
-RUN apk add bash git curl
+RUN apk add --no-cache bash git curl
