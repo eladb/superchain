@@ -4,8 +4,7 @@ a docker image with all the goodies needed to package [jsii](https://github.com/
 
 Currently includes:
 
- - NodeJS 10.16
- - OpenJDK 8
- - Python 3.6
- - .NET is not supported
- 
+- NodeJS 12.22
+- OpenJDK 8
+- Python 3.6
+- .NET 2.2
